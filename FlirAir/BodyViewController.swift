@@ -37,10 +37,10 @@ class BodyViewController: UIViewController {
         case buttonHead:
             request("head")
             break
-        case buttonHead:
+        case buttonTorso:
             request("torso")
             break
-        case buttonHead:
+        case buttonLegs:
             request("legs")
             break
         default:

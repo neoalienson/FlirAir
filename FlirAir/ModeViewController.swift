@@ -40,7 +40,7 @@ class ModeViewController: UIViewController {
         case buttonEars:
             request("mode_ears")
             break
-        case buttonAimed:
+        case buttonStrong:
             request("mode_strong")
             break
         default:
