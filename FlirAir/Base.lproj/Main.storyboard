@@ -76,6 +76,30 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="133"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJx-F0-K6G">
+                                <rect key="frame" x="3" y="284" width="463" height="184"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="mode_ears"/>
+                                <connections>
+                                    <action selector="buttonTorso:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jfZ-us-FOU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7b-Rx-6Kr">
+                                <rect key="frame" x="3" y="473" width="463" height="184"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="mode_strong_b"/>
+                                <connections>
+                                    <action selector="buttonLegs:" destination="9pv-A4-QxB" eventType="touchUpInside" id="cgh-L5-l7X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwx-78-yLc">
+                                <rect key="frame" x="3" y="94" width="463" height="184"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="mode_aimed_b"/>
+                                <connections>
+                                    <action selector="buttonHead:" destination="9pv-A4-QxB" eventType="touchUpInside" id="203-mH-w40"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,6 +137,9 @@
         <image name="first" width="30" height="30"/>
         <image name="head_b" width="409" height="184"/>
         <image name="legs_b" width="409" height="237"/>
+        <image name="mode_aimed_b" width="409" height="184"/>
+        <image name="mode_ears" width="409" height="184"/>
+        <image name="mode_strong_b" width="409" height="184"/>
         <image name="second" width="30" height="30"/>
         <image name="torso" width="409" height="197"/>
     </resources>
