@@ -14,32 +14,39 @@ class BodyViewController: UIViewController {
     @IBOutlet weak var buttonTorso: UIButton!
     @IBOutlet weak var buttonLegs: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func request(mode: String) {
+        let url = NSURL(string: "http://flir.hopto.org:8000/" + mode)
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            print("error")
+        }
+        
+        task.resume()
     }
     
-    @IBAction func buttonHead(sender: AnyObject) {
-        buttonHead.setImage(UIImage(named: "head"), forState: UIControlState.Normal)
-        buttonTorso.setImage(UIImage(named: "torso_b"), forState: UIControlState.Normal)
-        buttonLegs.setImage(UIImage(named: "legs_b"), forState: UIControlState.Normal)
-    }
-
-    @IBAction func buttonTorso(sender: AnyObject) {
-        buttonHead.setImage(UIImage(named: "head_b"), forState: UIControlState.Normal)
-        buttonTorso.setImage(UIImage(named: "torso"), forState: UIControlState.Normal)
-        buttonLegs.setImage(UIImage(named: "legs_b"), forState: UIControlState.Normal)
-    }
-
-    @IBAction func buttonLegs(sender: AnyObject) {
-        buttonHead.setImage(UIImage(named: "head_b"), forState: UIControlState.Normal)
-        buttonTorso.setImage(UIImage(named: "torso_b"), forState: UIControlState.Normal)
-        buttonLegs.setImage(UIImage(named: "legs"), forState: UIControlState.Normal)
+    @IBAction func buttonUp(sender: AnyObject) {
+        let button = sender as! UIButton
+        buttonHead.setImage(UIImage(named: ((button == buttonHead) ? "head" : "head_b")),
+            forState: UIControlState.Normal)
+        buttonTorso.setImage(UIImage(named: (button == buttonTorso) ? "torso" : "torso_b"),
+            forState: UIControlState.Normal)
+        buttonLegs.setImage(UIImage(named: (button == buttonLegs) ? "legs" : "legs_b"),
+            forState: UIControlState.Normal)
+        
+        switch (button) {
+        case buttonHead:
+            request("head")
+            break
+        case buttonHead:
+            request("torso")
+            break
+        case buttonHead:
+            request("legs")
+            break
+        default:
+            break
+            
+        }
     }
 
 }

@@ -22,7 +22,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="head_b"/>
                                 <connections>
-                                    <action selector="buttonHead:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zJJ-qn-3Z3"/>
+                                    <action selector="buttonUp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ZvI-wa-ftH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqx-E2-6Mv">
@@ -30,7 +30,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="torso"/>
                                 <connections>
-                                    <action selector="buttonTorso:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Mrx-f3-Sos"/>
+                                    <action selector="buttonUp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="EVR-Hr-O8A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ4-aM-mDM">
@@ -38,7 +38,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="legs_b"/>
                                 <connections>
-                                    <action selector="buttonLegs:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Dgq-HF-UHM"/>
+                                    <action selector="buttonUp:" destination="9pv-A4-QxB" eventType="touchUpInside" id="TME-Fu-2lj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner_wide" translatesAutoresizingMaskIntoConstraints="NO" id="Dqa-xc-cQN">
@@ -81,7 +81,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="mode_ears"/>
                                 <connections>
-                                    <action selector="buttonTorso:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jfZ-us-FOU"/>
+                                    <action selector="buttonUp:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="hqf-6s-Bb2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7b-Rx-6Kr">
@@ -89,7 +89,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="mode_strong_b"/>
                                 <connections>
-                                    <action selector="buttonLegs:" destination="9pv-A4-QxB" eventType="touchUpInside" id="cgh-L5-l7X"/>
+                                    <action selector="buttonUp:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1hp-BH-qtB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwx-78-yLc">
@@ -97,7 +97,7 @@
                                 <animations/>
                                 <state key="normal" title="Button" image="mode_aimed_b"/>
                                 <connections>
-                                    <action selector="buttonHead:" destination="9pv-A4-QxB" eventType="touchUpInside" id="203-mH-w40"/>
+                                    <action selector="buttonUp:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4Y1-M7-S76"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -105,6 +105,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mode" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="buttonAimed" destination="Lwx-78-yLc" id="v8j-dD-1T3"/>
+                        <outlet property="buttonEars" destination="pJx-F0-K6G" id="4r3-Wm-X2R"/>
+                        <outlet property="buttonStrong" destination="i7b-Rx-6Kr" id="uCp-gD-dNF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
