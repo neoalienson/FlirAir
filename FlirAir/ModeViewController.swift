@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  FlirAir
 //
 //  Created by Neo on 11/21/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ModeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B57E8F191C00C27800040BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E8F181C00C27800040BFE /* AppDelegate.swift */; };
-		B57E8F1B1C00C27800040BFE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E8F1A1C00C27800040BFE /* FirstViewController.swift */; };
-		B57E8F1D1C00C27800040BFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E8F1C1C00C27800040BFE /* SecondViewController.swift */; };
+		B57E8F1B1C00C27800040BFE /* BodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E8F1A1C00C27800040BFE /* BodyViewController.swift */; };
+		B57E8F1D1C00C27800040BFE /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E8F1C1C00C27800040BFE /* ModeViewController.swift */; };
 		B57E8F201C00C27800040BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57E8F1E1C00C27800040BFE /* Main.storyboard */; };
-		B57E8F221C00C27800040BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57E8F211C00C27800040BFE /* Assets.xcassets */; };
 		B57E8F251C00C27800040BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57E8F231C00C27800040BFE /* LaunchScreen.storyboard */; };
+		B57E8F2D1C00F18000040BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57E8F2C1C00F18000040BFE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B57E8F151C00C27800040BFE /* FlirAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlirAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57E8F181C00C27800040BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B57E8F1A1C00C27800040BFE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B57E8F1C1C00C27800040BFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B57E8F1A1C00C27800040BFE /* BodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyViewController.swift; sourceTree = "<group>"; };
+		B57E8F1C1C00C27800040BFE /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
 		B57E8F1F1C00C27800040BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B57E8F211C00C27800040BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57E8F241C00C27800040BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57E8F261C00C27800040BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57E8F2C1C00F18000040BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FlirAir/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,7 @@
 			children = (
 				B57E8F171C00C27800040BFE /* FlirAir */,
 				B57E8F161C00C27800040BFE /* Products */,
+				B57E8F2C1C00F18000040BFE /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,10 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				B57E8F181C00C27800040BFE /* AppDelegate.swift */,
-				B57E8F1A1C00C27800040BFE /* FirstViewController.swift */,
-				B57E8F1C1C00C27800040BFE /* SecondViewController.swift */,
+				B57E8F1A1C00C27800040BFE /* BodyViewController.swift */,
+				B57E8F1C1C00C27800040BFE /* ModeViewController.swift */,
 				B57E8F1E1C00C27800040BFE /* Main.storyboard */,
-				B57E8F211C00C27800040BFE /* Assets.xcassets */,
 				B57E8F231C00C27800040BFE /* LaunchScreen.storyboard */,
 				B57E8F261C00C27800040BFE /* Info.plist */,
 			);
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57E8F251C00C27800040BFE /* LaunchScreen.storyboard in Resources */,
-				B57E8F221C00C27800040BFE /* Assets.xcassets in Resources */,
+				B57E8F2D1C00F18000040BFE /* Assets.xcassets in Resources */,
 				B57E8F201C00C27800040BFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57E8F1D1C00C27800040BFE /* SecondViewController.swift in Sources */,
+				B57E8F1D1C00C27800040BFE /* ModeViewController.swift in Sources */,
 				B57E8F191C00C27800040BFE /* AppDelegate.swift in Sources */,
-				B57E8F1B1C00C27800040BFE /* FirstViewController.swift in Sources */,
+				B57E8F1B1C00C27800040BFE /* BodyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
