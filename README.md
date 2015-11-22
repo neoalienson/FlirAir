@@ -1,18 +1,21 @@
-*Folder Structure
+for details about this App and Hardware setup, please visit http://devpost.com/software/flirair
+* Folder Structure and files
 
-**Assets
+  * Assets, Images for use in App and presentations
 
-Images for use in App and presentations
+  * controller/start_capture.sh, script for run raspberrypi_capture every seconds, and write the captured
+    FLIR image to output.pgm
 
-**capture
+  * controller/raspberrypi_capture, Lepton capture for raspberry pi
 
-Lepton capture for raspberry pi (may use the default one and call via crontab)
+  * controller/seek.py, Run contiously to read output.pbm from captured FLIR
+    image, and action.txt from httpd.py. Using the information the script
+    adjust Fan tilt, rotation and fan speed 
 
-** FlirAir
+  * controller/httpd.py, HTTP server that receives request from iOS App and
+    save the GET parameters to action.txt
 
-XCode project and classes
+  * FlirAir, iOS App with XCode project
 
-** server
-
-Server-side code to request from App
+  * server/, Server-side code for saving request to action.txt from iOS App
 
