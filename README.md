@@ -16,8 +16,12 @@ Is a persoanl desktop fan with thermal seeking capability. It can be controlled 
 for details about this App and Hardware setup, please visit http://devpost.com/software/flirair
 
 ## iOS App
-![Screen for target selection](TargetScreen.PNG)
-![Screen for mode selection](ModeScreen.PNG)
+
+### Screen captures
+
+| Target selection | Mode selection |
+| ------------- | ------------- |
+| <img src="TargetScreen.PNG" width="200"> | <img src="ModeScreen.PNG" width="200"> |
 
 ### Folder Structure and files
 
