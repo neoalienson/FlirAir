@@ -1,5 +1,25 @@
+# FlirAir
+
+Is a persoanl desktop fan with thermal seeking capability. It can be controlled by iOS App.
+
+## Part list
+| Part  | Description / Remark |
+| ------------- | ------------- |
+| Raspberry Pi  | USD 5-35, depends on model  |
+| Male-Male & Male-Female jumper wires  | USD 4-8  |
+| Servo X 2  | @USD 3-4  |
+| 12V 5V DC 4 pins power supply | 12 V for Fan. 5 V for servo and pi |
+| Micro USB Charger (optional) | You can skip this if you provide power from the above power supply |
+| PWM PC Chasis Fan | Do not use fan over 1500 RPM. Fan with high RPM is noisy. You can still use a non-PWM fan if you do not want to control fan speed |
+| Sticks | for building the frame |
+
 for details about this App and Hardware setup, please visit http://devpost.com/software/flirair
-* Folder Structure and files
+
+## iOS App
+![Screen for target selection](TargetScreen.PNG)
+![Screen for mode selection](ModeScreen.PNG)
+
+### Folder Structure and files
 
   * Assets, Images for use in App and presentations
 
