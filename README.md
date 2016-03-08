@@ -1,6 +1,7 @@
 # FlirAir
 
-Is a persoanl desktop fan with thermal seeking capability. It can be controlled by iOS App.
+It is a personal desktop fan with thermal seeking capability, controlled by raspberry Pi and iOS App.
+http://devpost.com/software/flirair
 
 ## Part list
 | Part  | Description / Remark |
@@ -13,7 +14,9 @@ Is a persoanl desktop fan with thermal seeking capability. It can be controlled 
 | PWM PC Chasis Fan | Do not use fan over 1500 RPM. Fan with high RPM is noisy. You can still use a non-PWM fan if you do not want to control fan speed |
 | Sticks | for building the frame |
 
-for details about this App and Hardware setup, please visit http://devpost.com/software/flirair
+Setup
+
+<img src="FLIRAIR.jpg" width="600"> 
 
 ## iOS App
 
